@@ -565,9 +565,14 @@ img {
     }
     /* Центрируем иконку трубки внутри плавающего круга */
     .fixed-call-btn {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
+    }
+    .fixed-call-btn svg {
+        display: block;
+    }
+
     }
     .fixed-call-btn i {
         display: inline-block;
