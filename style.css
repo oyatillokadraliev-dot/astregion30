@@ -547,7 +547,6 @@ img {
         gap: 40px;
     }
 }
-
 @media (max-width: 768px) {
     .nav, .btn-phone-header {
         display: none;
@@ -558,11 +557,23 @@ img {
     .section {
         padding: 60px 0;
     }
+    /* Починили размер заголовка на смартфонах */
     .hero-title {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        word-wrap: break-word;
     }
+    /* Центрируем иконку трубки внутри плавающего круга */
     .fixed-call-btn {
-        display: inline-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fixed-call-btn i {
+        display: inline-block;
+        color: #ffffff !important;
+        font-size: 1.5rem !important;
+        line-height: 1;
     }
     .warranty-container {
         flex-direction: column;
@@ -579,6 +590,7 @@ img {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 }
+
 /* Стили для статичной карты-ссылки */
 .map-link-block {
     position: relative;
